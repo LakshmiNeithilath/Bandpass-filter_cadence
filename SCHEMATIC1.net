@@ -1,0 +1,13 @@
+* source FILTERS
+C_C5         N05138 N05172  0.01u  TC=0,0 
+V_V8         0 VEE 15
+R_R13         N05138 N05252  4.3k TC=0,0 
+R_R12         0 N05138  5.6k TC=0,0 
+C_C6         N05138 VOUT  0.01u  TC=0,0 
+V_V7         VCC 0 15
+X_U6         0 N05172 VCC VEE VOUT LM741
+V_V9         N05252 0 DC 0Vdc AC 0Vac
++SIN 0.0000001m {.5*10} 1000 0 0 0
+R_R11         N05172 VOUT  100k TC=0,0 
+** Floating/unmodeled pin fixups **
+R__UC0001   0  0   {1/GMIN}
